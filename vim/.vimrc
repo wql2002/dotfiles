@@ -79,6 +79,7 @@ inoremap <Right> <ESC>:echoe "Use l"<CR>
 inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
+" Set up *.py title descriptions
 func SetTitle()
 call setline(0, "\#!/usr/bin/python")
 call setline(1, "\# -*- coding=utf8 -*-")
@@ -92,4 +93,21 @@ normal o
 normal o
 endfunc
 autocmd bufnewfile *.py call SetTitle()
+
+" Spaces & Tabs
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set tabstop=4       " number of visual spaces per TAB
+set softtabstop=4   " number of spaces in tab when editing
+set shiftwidth=4    " Insert 4 spaces on a tab
+set expandtab       " tabs are spaces, mainly because of python
+
+" UI Config
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set showcmd	        " show command in bottom bar
+set cursorline      " highlight current line
+set wildmenu        " visual autocomplete for command menu
+set showmatch       " highlight matching [{()}]
+set linebreak       " have lines wrap instead of continue off-screen
+set scrolloff=12    " keep cursor in approximately the middle of the screen
+set ttyfast	        " improve redrawing
 
