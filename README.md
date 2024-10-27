@@ -1,4 +1,5 @@
 # dotfiles
+
 my personal dotfile collections
 
 ## Set Up
@@ -6,6 +7,7 @@ my personal dotfile collections
 ### Install stow
 
 To install from source:
+
 ```{shell}
 wget https://ftp.gnu.org/gnu/stow/stow-2.4.1.tar.gz
 tar -xvpzf stow-2.4.1.tar.gz
@@ -17,6 +19,7 @@ make install
 ```
 
 To test if installed successfully
+
 ```{shell}
 stow -V
 ```
@@ -24,16 +27,19 @@ stow -V
 ### Install zsh
 
 To install zsh:
+
 ```{shell}
 sudo apt install zsh
 ```
 
 To install oh-my-zsh:
+
 ```{shell}
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
 To install powerlevel10k:
+
 ```{shell}
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 ```
@@ -41,6 +47,7 @@ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerl
 ## Sync
 
 Run the script to sync:
+
 ```{shell}
 ./setup.sh
 ```
