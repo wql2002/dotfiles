@@ -21,6 +21,18 @@ To test if installed successfully
 stow -V
 ```
 
+### Install zsh
+
+To install zsh:
+```{shell}
+sudo apt install zsh
+```
+
+To install oh-my-zsh:
+```{shell}
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
 ## Sync
 
 Run the script to sync:
