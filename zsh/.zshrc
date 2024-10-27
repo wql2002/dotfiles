@@ -111,9 +111,6 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# enable command line http/https proxies
-source ~/.proxy
-
 # set up rust env if exists
 if [ -d "$HOME/.cargo" ]; then
     export PATH="$HOME/.cargo/env:$PATH"

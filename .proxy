@@ -1,9 +1,0 @@
-#!/bin/bash
-
-KERNEL_VERSION=$(uname -r)
-# if KERNEL_VERSION contains WSL2, not used microsoft
-if [[ $KERNEL_VERSION == *"WSL2"* ]]; then
-    export hostip=$(cat /etc/resolv.conf |grep -oP '(?<=nameserver\ ).*')
-    alias setss='export https_proxy="http://${hostip}:7890";export http_proxy="http://${hostip}:7890";export all_proxy="socks5://${hostip}:7890";'
-    alias unsetss='unset https_proxy http_proxy all_proxy'
-fi
