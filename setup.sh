@@ -8,7 +8,7 @@ find . -name ".DS_Store" -exec rm {} \;
 
 PROGRAMS=(bash env git tmux vim zsh)
 
-OLD_DOTFILES="~/dotfile_bak_$(date -u +"%Y%m%d%H%M%s")"
+OLD_DOTFILES="${HOME}/dotfile_bak_$(date -u +"%Y%m%d%H%M%s")"
 
 mkdir ${OLD_DOTFILES}
 
