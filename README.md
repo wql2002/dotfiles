@@ -18,6 +18,8 @@ make
 make install
 ```
 
+Use `sudo make install` if permission denied.
+
 To test if installed successfully
 
 ```{shell}
