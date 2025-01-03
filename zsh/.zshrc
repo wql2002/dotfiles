@@ -113,12 +113,12 @@ source $ZSH/oh-my-zsh.sh
 
 # set up rust env if exists
 if [ -d "$HOME/.cargo" ]; then
-    export PATH="$HOME/.cargo/env:$PATH"
+    source "$HOME/.cargo/env"
 fi
 
-# Set up rust env if exists
+# Set up qemu env if exists
 if [ -d "$HOME/qemu-7.0.0" ]; then
-    export PATH="$HOME/build:$PATH"
+    export PATH="$HOME/qemu-7.0.0/build:$PATH"
 fi
 
 
