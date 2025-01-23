@@ -3,10 +3,13 @@
 # Author: JJGO
 # source: https://github.com/JJGO/dotfiles/blob/master/setup_all.sh
 
+set -e 			# Exit on error
+set -x 			# Enable verbosity
+
 # Dont link DS_Store files
 find . -name ".DS_Store" -exec rm {} \;
 
-PROGRAMS=(bash env git tmux vim zsh)
+PROGRAMS=(git tmux vim zsh)
 
 OLD_DOTFILES="${HOME}/dotfile_bak_$(date -u +"%Y%m%d%H%M%s")"
 
