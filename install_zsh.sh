@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # check if zsh exists
-if [ -z "$(which zsh)" ]; then
+if ! [ -x "$(command -v zsh)" ]; then
     echo "Installing zsh"
     sudo apt install zsh
 
