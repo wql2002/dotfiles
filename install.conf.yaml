@@ -7,13 +7,7 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - [sudo apt install zsh, Downloading zsh]
-  - 
-    command: sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-    description: Installing oh-my-zsh
-  -
-    command: git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
-    description: Installing powerlevel10k
+  - [./install_zsh.sh, Installing zsh and its plugins]
 
 - link:
     ~/.tmux.conf: tmux/.tmux.conf
