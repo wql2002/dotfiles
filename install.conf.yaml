@@ -16,7 +16,7 @@
     description: Installing powerlevel10k
 
 - link:
-    ~/.tmux.conf: tmux/tmux.conf
+    ~/.tmux.conf: tmux/.tmux.conf
     ~/.vimrc: vim/.vimrc
     ~/.gitconfig: git/.gitconfig
     ~/.zshrc: zsh/.zshrc
