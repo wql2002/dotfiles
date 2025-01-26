@@ -11,9 +11,13 @@
 
 - link:
     ~/.tmux.conf: tmux/.tmux.conf
-    ~/.vimrc: vim/.vimrc
+    ~/.vimrc: 
+      path: vim/.vimrc
+      force: true
     ~/.gitconfig: git/.gitconfig
-    ~/.zshrc: zsh/.zshrc
+    ~/.zshrc: 
+      path: zsh/.zshrc
+      force: true
     ~/.p10k.zsh: zsh/.p10k.zsh
 
 - create:
