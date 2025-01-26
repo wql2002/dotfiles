@@ -50,8 +50,20 @@ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerl
 
 ## Sync
 
+Before syncing, make sure to backup your existing dotfiles and install the required software.
+
+### stow-based
+
 Run the script to sync:
 
 ```{shell}
 ./setup.sh
+```
+
+### dotbot-based
+
+Run the script to sync:
+
+```{shell}
+./install
 ```
