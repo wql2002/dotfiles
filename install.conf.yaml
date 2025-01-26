@@ -7,11 +7,6 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - 
-    command: ./install_zsh.sh
-    description: Installing zsh and its plugins
-    stdout: true
-    stderr: true
 
 - link:
     ~/.tmux.conf: tmux/.tmux.conf

@@ -28,6 +28,8 @@ stow -V
 
 ### Install zsh
 
+**TL;DR**: run `./install_zsh.sh`
+
 To install zsh:
 
 ```{shell}

@@ -3,7 +3,7 @@
 # check if zsh exists
 if ! [ -x "$(command -v zsh)" ]; then
     echo "Installing zsh"
-    sudo apt install zsh
+    sudo apt install -y zsh
 fi
 
 # check if oh-my-zsh exists
