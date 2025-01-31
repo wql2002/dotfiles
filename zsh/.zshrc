@@ -125,4 +125,7 @@ if [ -d "$HOME/qemu-7.0.0" ]; then
     export PATH="$HOME/qemu-7.0.0/build:$PATH"
 fi
 
-
+# Set up .local env if exists
+if [ -d "$HOME/.local/bin" ]; then
+    export PATH="$HOME/.local/bin:$PATH"
+fi
