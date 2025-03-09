@@ -127,8 +127,8 @@ if [ -d "$HOME/qemu-7.0.0" ]; then
 fi
 
 # Set up go env if exists
-if [-d "/usr/local/go/bin" ]; then
-    export PATH=$PATH:/usr/local/go/bin
+if [ -d "/usr/local/go/bin" ]; then
+    export PATH="$PATH:/usr/local/go/bin"
 fi
 
 # Set up .local env if exists
