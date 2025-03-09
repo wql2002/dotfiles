@@ -111,6 +111,7 @@ source $ZSH/oh-my-zsh.sh
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias python='python3'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -125,4 +126,8 @@ if [ -d "$HOME/qemu-7.0.0" ]; then
     export PATH="$HOME/qemu-7.0.0/build:$PATH"
 fi
 
+# Set up go env if exists
+if [-d "/usr/local/go/bin" ]; then
+    export PATH=$PATH:/usr/local/go/bin
+fi
 
