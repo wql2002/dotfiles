@@ -135,3 +135,8 @@ fi
 if [ -d "$HOME/.local/bin" ]; then
     export PATH="$HOME/.local/bin:$PATH"
 fi
+
+# Set up starship prompt if exists
+if command --version starship >/dev/null 2>&1; then
+    eval "$(starship init zsh)"
+fi
