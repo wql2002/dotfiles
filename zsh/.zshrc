@@ -136,14 +136,13 @@ if [ -d "$HOME/.local/bin" ]; then
     export PATH="$HOME/.local/bin:$PATH"
 fi
 
-<<<<<<< HEAD
 # Set up starship prompt if exists
 if command --version starship >/dev/null 2>&1; then
     eval "$(starship init zsh)"
-=======
+fi
+
 if [ -d "$HOME/.nvm" ]; then
     export NVM_DIR="$HOME/.nvm"
     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
     [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
->>>>>>> refs/remotes/origin/main
 fi
