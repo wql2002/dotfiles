@@ -1,3 +1,7 @@
 [user]
 	name = wql2002
 	email = wqlthu2020@gmail.com
+[core]
+        editor = vim
+[color]
+        ui = true
